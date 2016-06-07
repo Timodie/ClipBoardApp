@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipboardMonitor", "ClipboardMonitor.csproj", "{BF59F36B-2F60-439A-B3C7-9B2ACB7D6CDD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BF59F36B-2F60-439A-B3C7-9B2ACB7D6CDD}.Debug.ActiveCfg = Debug|.NET
+		{BF59F36B-2F60-439A-B3C7-9B2ACB7D6CDD}.Debug.Build.0 = Debug|.NET
+		{BF59F36B-2F60-439A-B3C7-9B2ACB7D6CDD}.Release.ActiveCfg = Release|.NET
+		{BF59F36B-2F60-439A-B3C7-9B2ACB7D6CDD}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
