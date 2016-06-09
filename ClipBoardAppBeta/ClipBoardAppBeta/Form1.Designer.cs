@@ -43,13 +43,7 @@
             this.A1 = new System.Windows.Forms.Button();
             this.A2 = new System.Windows.Forms.Button();
             this.A3 = new System.Windows.Forms.Button();
-            this.B1 = new System.Windows.Forms.Button();
-            this.B2 = new System.Windows.Forms.Button();
-            this.B3 = new System.Windows.Forms.Button();
-            this.C1 = new System.Windows.Forms.Button();
-            this.C2 = new System.Windows.Forms.Button();
-            this.C3 = new System.Windows.Forms.Button();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,13 +114,13 @@
             // howToToolStripMenuItem
             // 
             this.howToToolStripMenuItem.Name = "howToToolStripMenuItem";
-            this.howToToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.howToToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.howToToolStripMenuItem.Text = "How To";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -163,74 +157,26 @@
             this.A3.UseVisualStyleBackColor = true;
             this.A3.Click += new System.EventHandler(this.A3_Click);
             // 
-            // B1
+            // listView1
             // 
-            this.B1.Location = new System.Drawing.Point(45, 121);
-            this.B1.Name = "B1";
-            this.B1.Size = new System.Drawing.Size(75, 75);
-            this.B1.TabIndex = 5;
-            this.B1.UseVisualStyleBackColor = true;
-            // 
-            // B2
-            // 
-            this.B2.Location = new System.Drawing.Point(126, 121);
-            this.B2.Name = "B2";
-            this.B2.Size = new System.Drawing.Size(75, 75);
-            this.B2.TabIndex = 6;
-            this.B2.UseVisualStyleBackColor = true;
-            // 
-            // B3
-            // 
-            this.B3.Location = new System.Drawing.Point(207, 121);
-            this.B3.Name = "B3";
-            this.B3.Size = new System.Drawing.Size(75, 75);
-            this.B3.TabIndex = 7;
-            this.B3.UseVisualStyleBackColor = true;
-            // 
-            // C1
-            // 
-            this.C1.Location = new System.Drawing.Point(45, 202);
-            this.C1.Name = "C1";
-            this.C1.Size = new System.Drawing.Size(75, 75);
-            this.C1.TabIndex = 8;
-            this.C1.UseVisualStyleBackColor = true;
-            // 
-            // C2
-            // 
-            this.C2.Location = new System.Drawing.Point(126, 202);
-            this.C2.Name = "C2";
-            this.C2.Size = new System.Drawing.Size(75, 75);
-            this.C2.TabIndex = 9;
-            this.C2.UseVisualStyleBackColor = true;
-            // 
-            // C3
-            // 
-            this.C3.Location = new System.Drawing.Point(207, 202);
-            this.C3.Name = "C3";
-            this.C3.Size = new System.Drawing.Size(75, 75);
-            this.C3.TabIndex = 10;
-            this.C3.UseVisualStyleBackColor = true;
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(64, 296);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(194, 95);
-            this.richTextBox2.TabIndex = 11;
-            this.richTextBox2.Text = "";
+            this.listView1.AllowColumnReorder = true;
+            this.listView1.AllowDrop = true;
+            this.listView1.AutoArrange = false;
+            this.listView1.BackColor = System.Drawing.SystemColors.Window;
+            this.listView1.Location = new System.Drawing.Point(28, 153);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(254, 162);
+            this.listView1.TabIndex = 5;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(321, 417);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.C3);
-            this.Controls.Add(this.C2);
-            this.Controls.Add(this.C1);
-            this.Controls.Add(this.B3);
-            this.Controls.Add(this.B2);
-            this.Controls.Add(this.B1);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.A3);
             this.Controls.Add(this.A2);
             this.Controls.Add(this.A1);
@@ -266,13 +212,7 @@
         private System.Windows.Forms.Button A1;
         private System.Windows.Forms.Button A2;
         private System.Windows.Forms.Button A3;
-        private System.Windows.Forms.Button B1;
-        private System.Windows.Forms.Button B2;
-        private System.Windows.Forms.Button B3;
-        private System.Windows.Forms.Button C1;
-        private System.Windows.Forms.Button C2;
-        private System.Windows.Forms.Button C3;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.ListView listView1;
     }
 }
 

@@ -30,13 +30,14 @@ namespace ClipBoardAppBeta
                                       IntPtr wParam,
                                       IntPtr lParam);
         IntPtr nextClipboardViewer;
-
+        int index;
         Stack board;
         public Form1()
         {
             InitializeComponent();
             Clipboard.Clear();
             board =new Stack();
+            index = 0;
             nextClipboardViewer = (IntPtr)SetClipboardViewer((int)this.Handle);
             // this.richTextBox1 = new System.Windows.Forms.RichTextBox();
         }
@@ -78,7 +79,7 @@ namespace ClipBoardAppBeta
             if (iData.GetDataPresent(DataFormats.Text))
             {
                 MessageBox.Show("Clipboard says :\n" + (String)iData.GetData(DataFormats.Text));
-                richTextBox2.Text = (string)iData.GetData(DataFormats.Text);
+                //richTextBox2.Text = (string)iData.GetData(DataFormats.Text);
             }
             else
             {
@@ -133,8 +134,12 @@ namespace ClipBoardAppBeta
                 {
                    // MessageBox.Show("Clipboard says :\n" + (String)iData.GetData(DataFormats.Text));
                     board.Push((String)iData.GetData(DataFormats.Text));
+                    ListViewItem lvi = new ListViewItem((String)iData.GetData(DataFormats.Text));
+                    listView1.Items.Insert(index,lvi);
+                   // index++;
                 }
-                    else{
+             
+                else{
                     MessageBox.Show("Clipboard empty");
                     }
                 }
@@ -143,8 +148,15 @@ namespace ClipBoardAppBeta
             }
             }
 
-      
-        
+       
+
+        private void listView1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+
+
 
 
 
@@ -160,6 +172,9 @@ namespace ClipBoardAppBeta
          *5.Run as a service or minimized background
          *6.When clicked should fly in
          *7.Possibly evoke when pasting texts(Paste from clipApp)
+         *8.If the copied item is an image, I could possibly save it somewhere and
+         * load a preview to be pasted later
+         *9.I could use all the Contains methods in future for audio,etc
          */
     }
 }
