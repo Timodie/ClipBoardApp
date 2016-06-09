@@ -32,11 +32,13 @@ namespace ClipBoardAppBeta
         IntPtr nextClipboardViewer;
         int index;
         Stack board;
+        Queue board1;
         public Form1()
         {
             InitializeComponent();
             Clipboard.Clear();
             board =new Stack();
+            board1 = new Queue();
             index = 0;
             nextClipboardViewer = (IntPtr)SetClipboardViewer((int)this.Handle);
             // this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -50,7 +52,8 @@ namespace ClipBoardAppBeta
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-
+            this.Show();
+            WindowState = FormWindowState.Normal;
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -60,9 +63,16 @@ namespace ClipBoardAppBeta
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("you clicked on A1");
+            if (board1.Count != 0)
+            {
+                MessageBox.Show("Dequeued :\n" + (String)board1.Dequeue());
+            }
+            else
+            {
+                MessageBox.Show("Queue is now empty");
+                listView1.Clear();
+            }
         }
-
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("By Tim Addai", "ClipApp");
@@ -134,6 +144,7 @@ namespace ClipBoardAppBeta
                 {
                    // MessageBox.Show("Clipboard says :\n" + (String)iData.GetData(DataFormats.Text));
                     board.Push((String)iData.GetData(DataFormats.Text));
+                    board1.Enqueue((String)iData.GetData(DataFormats.Text));
                     ListViewItem lvi = new ListViewItem((String)iData.GetData(DataFormats.Text));
                     listView1.Items.Insert(index,lvi);
                    // index++;
@@ -148,14 +159,46 @@ namespace ClipBoardAppBeta
             }
             }
 
-       
+        private void Form1_Resize(object sender, System.EventArgs e)
+        {
+            if (FormWindowState.Minimized == this.WindowState)
+                MessageBox.Show("minimized!");
+            notifyIcon1.Visible = true;
+            notifyIcon1.ShowBalloonTip(500);
+                this.Hide();
+        }
 
         private void listView1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }
 
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.WindowsShutDown) return;
 
+            // Confirm user wants to close
+            switch (MessageBox.Show(this, "Run in background?", "ClipApp Closing", MessageBoxButtons.YesNo))
+            {
+                case DialogResult.No:
+                    e.Cancel = true;
+                    break;
+                
+                default:
+                    break;
+            }        
+        }
+
+        private void restoreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Show();
+            WindowState = FormWindowState.Normal;
+        }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
 
 

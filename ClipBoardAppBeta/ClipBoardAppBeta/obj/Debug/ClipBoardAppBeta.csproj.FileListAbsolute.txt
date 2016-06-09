@@ -16,3 +16,12 @@ C:\Users\Tim\Documents\GitHub\ClipBoardApp\ClipBoardApp\ClipBoardAppBeta\ClipBoa
 C:\Users\Tim\Documents\GitHub\ClipBoardApp\ClipBoardApp\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.Form1.resources
 C:\Users\Tim\Documents\GitHub\ClipBoardApp\ClipBoardApp\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.Properties.Resources.resources
 C:\Users\Tim\Documents\GitHub\ClipBoardApp\ClipBoardApp\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.csproj.GenerateResource.Cache
+C:\Users\taddai\Documents\GitHub\ClipBoardApp\ClipBoardAppBeta\ClipBoardAppBeta\bin\Debug\ClipBoardAppBeta.exe.config
+C:\Users\taddai\Documents\GitHub\ClipBoardApp\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.exe
+C:\Users\taddai\Documents\GitHub\ClipBoardApp\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.pdb
+C:\Users\taddai\Documents\GitHub\ClipBoardApp\ClipBoardAppBeta\ClipBoardAppBeta\bin\Debug\ClipBoardAppBeta.exe
+C:\Users\taddai\Documents\GitHub\ClipBoardApp\ClipBoardAppBeta\ClipBoardAppBeta\bin\Debug\ClipBoardAppBeta.pdb
+C:\Users\taddai\Documents\GitHub\ClipBoardApp\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.csprojResolveAssemblyReference.cache
+C:\Users\taddai\Documents\GitHub\ClipBoardApp\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.Form1.resources
+C:\Users\taddai\Documents\GitHub\ClipBoardApp\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.Properties.Resources.resources
+C:\Users\taddai\Documents\GitHub\ClipBoardApp\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.csproj.GenerateResource.Cache
