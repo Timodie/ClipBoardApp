@@ -1,9 +1,0 @@
-c:\users\taddai\documents\visual studio 2013\Projects\ClipBoardAppBeta\ClipBoardAppBeta\bin\Debug\ClipBoardAppBeta.exe.config
-c:\users\taddai\documents\visual studio 2013\Projects\ClipBoardAppBeta\ClipBoardAppBeta\bin\Debug\ClipBoardAppBeta.exe
-c:\users\taddai\documents\visual studio 2013\Projects\ClipBoardAppBeta\ClipBoardAppBeta\bin\Debug\ClipBoardAppBeta.pdb
-c:\users\taddai\documents\visual studio 2013\Projects\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.csprojResolveAssemblyReference.cache
-c:\users\taddai\documents\visual studio 2013\Projects\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.Form1.resources
-c:\users\taddai\documents\visual studio 2013\Projects\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.Properties.Resources.resources
-c:\users\taddai\documents\visual studio 2013\Projects\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.csproj.GenerateResource.Cache
-c:\users\taddai\documents\visual studio 2013\Projects\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.exe
-c:\users\taddai\documents\visual studio 2013\Projects\ClipBoardAppBeta\ClipBoardAppBeta\obj\Debug\ClipBoardAppBeta.pdb
